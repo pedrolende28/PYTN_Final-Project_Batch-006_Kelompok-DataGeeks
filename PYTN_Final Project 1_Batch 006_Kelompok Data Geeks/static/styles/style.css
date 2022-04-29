@@ -1,0 +1,243 @@
+@font-face {
+  font-family: Dongle;
+  src: url('../fonts/Dongle-Light.ttf');
+}
+
+.container {
+  font-family: Dongle;
+  margin-top: 70px;
+  width: 45%;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: -60px;
+  margin-bottom: -27.5px;
+}
+
+br {
+  margin-top: 2px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-field {
+  border: 0;
+  margin-top: 30px;
+}
+
+.form-text {
+  border: 0;
+  font-size: 24px;
+  margin-top: -20px;
+  font-weight: bold;
+}
+
+.form-input {
+  text-align: center;
+  width: 24.5%;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: normal;
+  cursor: 10px;
+  padding: 10px 5px 10px 5px;
+  margin-top: -20px;
+}
+
+.form-select {
+  border: 0;
+  border-radius: 5px;
+  width: 26.5%;
+  font-family: Dongle;
+  font-size: 21px;
+  margin-top: -20px;
+  padding: 5px 5px 1.2px 5px;
+}
+
+.description {
+  margin-top: 215px;
+  font-family: Dongle;
+}
+
+.title-keterangan {
+  font-size: 60px;
+  font-weight: bold;
+  height: 20px;
+}
+
+.result {
+  border: 1px solid #010201;
+  border-radius: 10px;
+  font-size: 40px;
+  margin-bottom: -20px;
+  color: #b6361d;
+  width:700px;
+}
+
+.back {
+  font-size: 25px;
+  text-decoration: none;
+  background-color: #1c87d3f0;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Dongle;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  width: 10%;
+  padding: 5px;
+}
+
+
+.button {
+  background-color: #1c87d3f0;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Dongle;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  width: 26.5%;
+  padding: 5px;
+
+}
+
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media only screen and (max-width: 768px) {
+  .form-input {
+    text-align: center;
+    width: 88%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: normal;
+    cursor: 10px;
+    padding: 10px 5px 10px 5px;
+    margin-top: -20px;
+    margin-left: 2px;
+  }
+
+@media only screen and (max-width: 768px) {
+  .form-text {
+    border: 0;
+    text-align: center;
+    font-size: 24px;
+    margin-top: -20px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .h1 {
+    font-size: 50px;
+    margin-top: -60px;
+    margin-bottom: -27.5px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-select {
+      border: 0;
+      border-radius: 5px;
+      width: 100%;
+      font-family: Dongle;
+      font-size: 21px;
+      margin-top: -20px;
+      padding: 5px 5px 1.2px 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    background-color: #1c87d3f0;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Dongle;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .back {
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #1c87d3f0;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Dongle;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px;
+  }
+ }
+
+ @media only screen and (max-width: 768px) {
+    .description {
+      margin-top: 210px;
+      font-family: Dongle;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .title-keterangan {
+      font-size: 50px;
+      font-weight: bold;
+      height: 20px;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .result {
+      border: 1px solid #010201;
+      border-radius: 10px;
+      font-size: 40px;
+      margin-bottom: -20px;
+      color: #b6361d;
+      width:100%;
+      text-align: center;
+    }
+  }
+}
+  body{ 
+    background-image: url(../img/Image.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  } 
