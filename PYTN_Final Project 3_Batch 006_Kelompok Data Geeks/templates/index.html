@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+  <title>Prediction of Death from Heart Disease</title>
+</head>
+
+<body background="{{url_for('static', filename='img/dust.png')}}">
+  <h1 class="title">Prediksi penyebab risiko kematian akibat penyakit jantung/ kardiovaskular berdasarkan catatan pasien</h1>
+  <div class="predict-form">
+    <p class="sub-title">
+    </p>
+    <form id="contact" action="{{ url_for('predict') }}" method="POST">
+      <fieldset>
+        <p class="form-text">Usia</p>
+        <input placeholder="Ketikkan Usia Pasien" name="age" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <p class="form-text">Apakah Pasien Punya Riwayat Penyakit Anemia?</p>
+        <input placeholder="Ketikkan 0 (Tidak) atau 1 (Iya)" name="anemia" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <p class="form-text">Presentase Fraksi Ejeksi</p>
+        <input placeholder="Ketikkan Presentase Fraksi Ejeksi Pasien" name="e_f" type="text" tabindex="3"
+          required>
+      </fieldset>
+      <fieldset>
+        <p class="form-text">Tingkat Sodium</p>
+        <input placeholder="Ketikkan Tingkat Sodium Pasien" name="s_sodium" type="text" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <p class="form-text">Jenis Kelamin Pasien</p>
+        <input placeholder="Ketikkan 0 (Wanita) atau 1 (Pria)" name="sex" type="text" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <p class="form-text">Jumlah Kontrol Tindak Lanjut</p>
+        <input placeholder="Berapa Kali Pasien Melakukan Kontrol Tindak Lanjut?" name="time" type="text" tabindex="4"
+          required>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Prediksi</button>
+      </fieldset>
+    </form>
+    <p class="message">{{ prediction_text }}</p>
+  </div>
+</body>
+
+</html>
