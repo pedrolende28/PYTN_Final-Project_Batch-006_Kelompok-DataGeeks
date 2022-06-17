@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+  <title>Document</title>
+</head>
+<body>
+  <div class="description">
+    <center>
+      <p class="title-keterangan">Hasil Prediksi</p>
+
+      {%if data == 0%}
+      <p class="result">Pengguna termasuk ke dalam cluster 0,karakteristiknya memiliki limit kredit rendah dan sering melakukan transaksi pembayaran dan pembelian</p> 
+
+      {%elif data == 1%}
+      <p class="result">Pengguna termasuk ke dalam Cluster 1, karakteristiknya memiliki limit kredit rata-rata dan sedikit melakukan transaksi kartu kredit atau penarikan tunai </p>
+
+      {%elif data == 2%}
+      <p class="result">Pengguna termasuk ke dalam klaster 2, karakteristiknya memiliki limit kredit tinggi dan menggunakan kartu kredit untuk transaksi tarik tunai</p>
+
+      {%elif data == 3%}
+      <p class="result">Pengguna termasuk ke dalam klaster 3, karakteristiknya memiliki limit kredit paling tinggi dan sering melakukan transaksi untuk pembelian dan pembayaran maupun tarik tunai</p>
+
+      {%elif data == 4%}
+      <p class="result">Pengguna termasuk ke dalam klaster 4, karakteristiknya memiliki limit kredit tinggi dengan saldo rata-rata dan menggunakan kartu kredit untuk transaksi pembelian dan pembayaran</p>
+
+      {%else%}
+      <p class="result">Pengguna tidak termasuk ke dalam klaster manapun</p>
+
+      {%endif%}
+
+      <br><br>
+
+      <a href='/' class="kembali">Kembali</a>
+
+    </center>
+  </div>
+</body>
+</html>
